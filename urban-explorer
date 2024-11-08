@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Packing List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            color: #63574A;
+            background: transparent;
+            line-height: 1.6;
+            overflow: visible;
+            height: auto;
+            min-height: auto;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            height: auto;
+            overflow: visible;
+            padding: 0 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            color: #63574A;
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            color: #8B8178;
+        }
+
+        .category {
+            margin-bottom: 32px;
+        }
+
+        .category-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+
+        .category-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #63574A;
+        }
+
+        .category-icon {
+            font-size: 24px;
+            margin-right: 8px;
+            user-select: none;
+        }
+
+        .checklist {
+            background: #fff;
+            border: 1px solid #E5DBD0;
+            border-radius: 8px;
+            overflow: visible;
+        }
+
+        .checklist-item {
+            display: flex;
+            align-items: center;
+            padding: 12px 16px;
+            border-bottom: 1px solid #E5DBD0;
+            transition: background-color 0.2s;
+        }
+
+        .checklist-item:last-child {
+            border-bottom: none;
+        }
+
+        .checklist-item:hover {
+            background-color: #F9F6F3;
+        }
+
+        .checkbox {
+            margin-right: 12px;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        .checkbox:checked + .item-text {
+            text-decoration: line-through;
+            color: #8B8178;
+        }
+
+        .item-text {
+            font-size: 14px;
+            color: #63574A;
+            transition: color 0.2s;
+            user-select: none;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 16px;
+            }
+
+            .header h1 {
+                font-size: 24px;
+            }
+
+            .category-title {
+                font-size: 18px;
+            }
+
+            .checklist-item {
+                padding: 10px 12px;
+            }
+        }
+
+        html {
+            overflow: visible;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+     <div class="container">
+        <div class="header">
+            <h1>Your Travel Packing List</h1>
+            <p>Keep track of everything you need for your upcoming adventure</p>
+        </div>
+    <div class="container">
+        <div class="category">
+            <div class="category-header">
+                <span class="category-icon">🔖</span>
+                <span class="category-title">Travel Essentials</span>
+            </div>
+            <div class="checklist">
+                <div class="checklist-item">
+                    <input type="checkbox" class="checkbox" id="passport">
+                    <label class="item-text" for="passport">Passport (valid for 6+ months)</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" class="checkbox" id="visa">
+                    <label class="item-text" for="visa">Visa documentation</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" class="checkbox" id="insurance">
+                    <label class="item-text" for="insurance">Travel insurance documents</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" class="checkbox" id="cash">
+                    <label class="item-text" for="cash">Cash in local currency</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" class="checkbox" id="cards">
+                    <label class="item-text" for="cards">Credit/Debit cards</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <div class="category-header">
+                <span class="category-icon">👕</span>
+                <span class="category-title">Clothing</span>
+            </div>
+            <div class="checklist">
+                <div class="checklist-item">
+                    <input type="checkbox" class="checkbox" id="basics">
+                    <label class="item-text" for="basics">Everyday basics (shirts, pants, undergarments)</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" class="checkbox" id="clothes">
+                    <label class="item-text" for="clothes">Weather-appropriate jacket</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" class="checkbox" id="evening">
+                    <label class="item-text" for="evening">Dressy outfit for dining</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" class="checkbox" id="shoes">
+                    <label class="item-text" for="shoes">Comfortable walking shoes</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" class="checkbox" id="backup-shoes">
+                    <label class="item-text" for="backup-shoes">Backup shoes/sandals</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" class="checkbox" id="hat">
+                    <label class="item-text" for="hat">Hat/cap</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" class="checkbox" id="sunglasses">
+                    <label class="item-text" for="sunglasses">Sunglasses</label>
+                </div>
+            </div>
+        </div>
+
+         <div class="category">
+            <div class="category-header">
+                <span class="category-icon">🎒</span>
+                <span class="category-title">Day Bag Essentials</span>
+            </div>
+            <div class="checklist">
+                <div class="checklist-item">
+                    <input type="checkbox" class="checkbox" id="backpack">
+                    <label class="item-text" for="backpack">Day bag/anti-theft bag</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" class="checkbox" id="bottle">
+                    <label class="item-text" for="bottle">Water bottle</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" class="checkbox" id="snacks">
+                    <label class="item-text" for="snacks">Portable snacks</label>
+                </div>
+                 <div class="checklist-item">
+                    <input type="checkbox" class="checkbox" id="wipes">
+                    <label class="item-text" for="wipes">Wet wipes</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" class="checkbox" id="tissue">
+                    <label class="item-text" for="tissue">Tissue pack</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <div class="category-header">
+                <span class="category-icon">📱</span>
+                <span class="category-title">Electronics</span>
+            </div>
+            <div class="checklist">
+                <div class="checklist-item">
+                    <input type="checkbox" class="checkbox" id="phone">
+                    <label class="item-text" for="phone">Phone & charger</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" class="checkbox" id="adapter">
+                    <label class="item-text" for="adapter">Universal power adapter</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" class="checkbox" id="camera">
+                    <label class="item-text" for="camera">Camera/GoPro</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" class="checkbox" id="powerbank">
+                    <label class="item-text" for="powerbank">Portable power bank</label>
+                </div>
+                 <div class="checklist-item">
+                    <input type="checkbox" class="checkbox" id="app">
+                    <label class="item-text" for="app">City transport/taxi/delivery apps</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <div class="category-header">
+                <span class="category-icon">🧴</span>
+                <span class="category-title">Toiletries</span>
+            </div>
+            <div class="checklist">
+                <div class="checklist-item">
+                    <input type="checkbox" class="checkbox" id="sunscreen">
+                    <label class="item-text" for="sunscreen">Sunscreen</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" class="checkbox" id="lipbalm">
+                    <label class="item-text" for="lipbalm">Lip balm</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" class="checkbox" id="band-aids">
+                    <label class="item-text" for="band-aids">Band-aids/blister pads</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" class="checkbox" id="skincare">
+                    <label class="item-text" for="skincare">Skincare essentials</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" class="checkbox" id="dental">
+                    <label class="item-text" for="dental">Dental care items</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" class="checkbox" id="medicine">
+                    <label class="item-text" for="medicine">Personal medications & basic first aid</label>
+                </div>
+            </div>
+
+           <div class="category">
+            <div class="category-header">
+                <span class="category-icon">✨</span>
+                <span class="category-title">Useful extra</span>
+            </div>
+            <div class="checklist">
+                <div class="checklist-item">
+                    <input type="checkbox" class="checkbox" id="raincoat">
+                    <label class="item-text" for="raincoat">Umbrella/rain gear</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" class="checkbox" id="lanyard">
+                    <label class="item-text" for="lanyard">Phone lanyard</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" class="checkbox" id="map">
+                    <label class="item-text" for="map">City map downloaded</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" class="checkbox" id="embassy">
+                    <label class="item-text" for="embassy">Embassy information</label>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
