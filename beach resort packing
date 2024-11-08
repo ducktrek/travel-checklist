@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tropical Resort Packing List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        /* Same styling as before */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            color: #63574A;
+            background: transparent;
+            line-height: 1.6;
+            overflow: visible;
+            height: auto;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+            height: auto;
+            overflow: visible;
+        }
+
+        .climate-note {
+            background: #F9F6F3;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 32px;
+            border-left: 4px solid #88BEB7;
+        }
+
+        .climate-note h2 {
+            color: #63574A;
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        /* Rest of the styles remain the same */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="climate-note">
+            <h2>🌴 Tropical Resort Essentials</h2>
+            <p>Pack for hot weather, beach activities, and resort dining. Remember sun protection and evening wear for restaurants.</p>
+        </div>
+
+        <div class="category">
+            <div class="category-header">
+                <span class="category-icon">🎫</span>
+                <span class="category-title">Travel Documents</span>
+            </div>
+            <div class="checklist">
+                <div class="checklist-item">
+                    <input type="checkbox" class="checkbox" id="passport">
+                    <label class="item-text" for="passport">Passport (valid for 6+ months)</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" class="checkbox" id="visa">
+                    <label class="item-text" for="visa">Visa/entry requirements</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" class="checkbox" id="insurance">
+                    <label class="item-text" for="insurance">Travel insurance (with water activities coverage)</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" class="checkbox" id="bookings">
+                    <label class="item-text" for="bookings">Hotel & flight confirmations</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <div class="category-header">
+                <span class="category-icon">👙</span>
+                <span class="category-title">Beach & Pool Wear</span>
+            </div>
+            <div class="checklist">
+                <div class="checklist-item">
+                    <input type="checkbox" class="checkbox" id="swimwear">
+                    <label class="item-text" for="swimwear">2-3 swimsuits/swim trunks</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" class="checkbox" id="coverups">
+                    <label class="item-text" for="coverups">Beach cover-ups/kaftans</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" class="checkbox" id="beachwear">
+                    <label class="item-text" for="beachwear">Quick-dry beachwear</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" class="checkbox" id="sandals">
+                    <label class="item-text" for="sandals">Water-resistant sandals</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" class="checkbox" id="beachbag">
+                    <label class="item-text" for="beachbag">Beach bag</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <div class="category-header">
+                <span class="category-icon">👔</span>
+                <span class="category-title">Resort Clothing</span>
+            </div>
+            <div class="checklist">
+                <div class="checklist-item">
+                    <input type="checkbox" class="checkbox" id="dresses">
+                    <label class="item-text" for="dresses">Light dresses/summer outfits</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" class="checkbox" id="formal">
+                    <label class="item-text" for="formal">Smart casual outfits for dinner (check resort dress code)</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" class="checkbox" id="lightclothes">
+                    <label class="item-text" for="lightclothes">Lightweight, breathable clothing</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" class="checkbox" id="sleepwear">
+                    <label class="item-text" for="sleepwear">Light sleepwear</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <div class="category-header">
+                <span class="category-icon">🧴</span>
+                <span class="category-title">Sun Protection & Toiletries</span>
+            </div>
+            <div class="checklist">
+                <div class="checklist-item">
+                    <input type="checkbox" class="checkbox" id="sunscreen">
+                    <label class="item-text" for="sunscreen">High SPF sunscreen (reef safe)</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" class="checkbox" id="aftersun">
+                    <label class="item-text" for="aftersun">After-sun care/aloe vera</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" class="checkbox" id="insect">
+                    <label class="item-text" for="insect">Insect repellent</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" class="checkbox" id="toiletries">
+                    <label class="item-text" for="toiletries">Basic toiletries</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <div class="category-header">
+                <span class="category-icon">🎯</span>
+                <span class="category-title">Activities & Accessories</span>
+            </div>
+            <div class="checklist">
+                <div class="checklist-item">
+                    <input type="checkbox" class="checkbox" id="sunglasses">
+                    <label class="item-text" for="sunglasses">Sunglasses</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" class="checkbox" id="hat">
+                    <label class="item-text" for="hat">Sun hat/cap</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" class="checkbox" id="waterproof">
+                    <label class="item-text" for="waterproof">Waterproof phone case</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" class="checkbox" id="camera">
+                    <label class="item-text" for="camera">Camera/GoPro</label>
+                </div>
+                <div class="checklist-item">
+                    <input type="checkbox" class="checkbox" id="books">
+                    <label class="item-text" for="books">Books/e-reader</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
